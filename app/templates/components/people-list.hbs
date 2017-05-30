@@ -1,0 +1,14 @@
+<ul>
+    {{#each list as |item index|}}
+    <li>
+        <button {{action "print" item}}>{{index}}:{{item}}</button>
+        <button onmousedown={{action "print1" item}}>{{item}}</button>
+    </li>
+    {{/each}}
+</ul>
+
+<p>我的全名叫：{{fullName}}</p> 
+
+<p>watch:{{aliasFullName}}</p>
+
+{{yield}}

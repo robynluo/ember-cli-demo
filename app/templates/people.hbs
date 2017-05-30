@@ -1,0 +1,20 @@
+<h5>this is people</h5>
+
+<span>名字叫：{{name}}</span>
+<span>今天{{age}}岁了</span>
+
+<div>
+{{#if isShow}}
+    <button {{action "change"}}>showDetail</button>
+
+    <p>床前明月光，疑是地上霜</p>
+{{else}}
+    <button {{action "change"}}>hideDetail</button>
+
+    <p>举头望明月，低头思故乡</p>
+{{/if}}
+</div>
+
+
+{{people-list list=model}}
+
